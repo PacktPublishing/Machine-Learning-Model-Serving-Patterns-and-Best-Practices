@@ -4,6 +4,8 @@ from sklearn import tree
 import numpy as np
 
 from flask import Flask, jsonify, request
+from flask import abort
+
 
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -24,6 +26,7 @@ def predict_loading_params():
         model.__dict__ = params
         X = json.loads(request.data)
         print(X)
+        print(X.shape)
         response = model.predict(X)
         return json.dumps(response, cls=NumpyEncoder)
 
@@ -33,6 +36,12 @@ def predict_with_full_model():
         model: tree.DecisionTreeClassifier = pickle.load(file)
         X = json.loads(request.data)
         print(X)
+        if len(X) == 0 or len(X[0]) != 3:
+            message = f"""
+The request feature dimension does not match the expected dimension.
+The input length of {X[0]} is {len(X[0])} but the model expects the length to be 3. 
+"""
+            abort(400, message)
         response = model.predict(X)
         return json.dumps(response, cls=NumpyEncoder)
 
