@@ -30,10 +30,13 @@ If you feel this book is for you, get your [copy](https://www.amazon.com/Machine
 All of the code is organized into folders.
 
 The code will look like the following:
+```train_images = train_images.astype(np.float32) / 255.0
+test_images = test_images.astype(np.float32) / 255.0
 ```
-SELECT row_number() over () AS _uid_,* FROM (SELECT * FROM getprotecteda('10160475')) AS _subq_1_
-```
+
+
 **Following is what you need for this book:**
+
 This book is for machine learning engineers and data scientists who want to bring their models into production. Those who are familiar with machine learning and have experience of using machine learning techniques but are looking for options and strategies to bring their models to production will find great value in this book. Working knowledge of Python programming is a must to get started.
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
@@ -52,6 +55,7 @@ With the following software and hardware list you can run all code files present
 
 
 ### Related products <Other books you may enjoy>
+
 * Machine Learning with Amazon SageMaker Cookbook  [[Packt]](https://www.packtpub.com/product/machine-learning-with-amazon-sagemaker-cookbook/9781800567030) [[Amazon]](https://www.amazon.in/Machine-Learning-Amazon-SageMaker-Cookbook/dp/1800567030/ref=sr_1_3?keywords=Machine+Learning+with+Amazon+SageMaker+Cookbook&qid=1638759383&sr=8-3)
   
 * Amazon Redshift Cookbook  [[Packt]](https://www.packtpub.com/product/amazon-redshift-cookbook/9781800569683) [[Amazon]](https://www.amazon.in/Amazon-Redshift-Cookbook-warehousing-solutions/dp/1800569688/ref=sr_1_1?keywords=Amazon+Redshift+Cookbook&qid=1638759416&sr=8-1)
