@@ -1,3 +1,11 @@
+
+### [Packt Conference : Put Generative AI to work on Oct 11-13 (Virtual)](https://packt.link/JGIEY)
+
+<b><p align='center'>[![Packt Conference](https://hub.packtpub.com/wp-content/uploads/2023/08/put-generative-ai-to-work-packt.png)](https://packt.link/JGIEY)</p></b> 
+3 Days, 20+ AI Experts, 25+ Workshops and Power Talks 
+
+Code: <b>USD75OFF</b>
+
 # Machine Learning Model Serving Patterns and Best Practices			
 
 <a href="https://www.packtpub.com/product/machine-learning-model-serving-patterns-and-best-practices/9781803249902"><img src="https://static.packt-cdn.com/products/9781803249902/cover/smaller" alt="Machine Learning Model Serving Patterns and Best Practices" height="256px" align="right"></a>
